@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;1,200&family=Saira&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: "poppins",sans-serif;
+}
+
+Header{
+  min-height: 60vh;
+  background: url(./motmot-8244307_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  position: relative;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.container{
+  max-width: 1200px;
+  margin:auto;
+  width:90%;
+}
+
+.nav{
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+.headline{
+  position: absolute;
+  top: 50% ;left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  cursor:pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-headline{
+  padding:.5rem 1rem;
+  border-radius: 1rem;
+  margin-top: .5rem;
+}
+
+.todo-section{
+  margin-top: 6rem;
+  text-align: center;
+  margin: auto 20%;
+}
+
+.form-todo{
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .2rem;
+}
+.form-todo input{
+  min-height: 100%;
+}
+.form-todo input[type="text"]{
+  width:78%;
+}
+.form-todo input[type="submit"]{
+  width:20%;
+  color: white;
+  background-color: rgb(14, 54, 14);
+  border-radius: .2rem;
+}
+.signup-section{
+  /* margin: 10rem; */
+  width: 80%;
+  text-align: center;
+  background-color: rgba(232, 228, 228, 0.762);
+  padding: 5rem;
+}
+
+.signup-form{
+  max-width: 800px;
+  width:95%;
+  margin: auto;
+  text-align: left;
+}
+.signup-form label{
+  display: block;
+}
+.signup-form input{
+  display: block;
+  width: 100%;
+}
+
+.signup-btn{
+  background-color: black;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: .2rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.todo-list{
+  list-style-type: none;
+  width: 100%;
+  background-color: blanchedalmond;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.todo-btn{
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 0 .2rem;
+}
+.todo-btn:hover{
+  transform: scale(1.05);
+  transition: ease-in-out 30ms;
+}
+.todo-list li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  border: 1px solid black;
+}
